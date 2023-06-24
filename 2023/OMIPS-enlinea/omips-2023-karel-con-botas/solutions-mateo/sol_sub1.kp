@@ -1,0 +1,19 @@
+      iniciar-programa
+        define-nueva-instruccion cuenta como inicio
+          si junto-a-zumbador y frente-libre entonces inicio
+            avanza;
+            cuenta;
+            deja-zumbador;
+         fin;
+        fin;
+    inicia-ejecucion
+        { Karel con botas }
+       mientras no-orientado-al-este hacer 
+         gira-izquierda;
+       mientras junto-a-zumbador y frente-libre hacer avanza;
+         repetir 2 veces gira-izquierda;
+         avanza;
+         cuenta;
+        apagate;
+    termina-ejecucion
+finalizar-programa
